@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   resources :tasks
   resources :states
-  get 'welcome/index'
+  
+  root 'welcome#index'
+  get 'ilovetocode' => 'welcome#index'
 
   get 'welcome/about'
 
